@@ -1,0 +1,26 @@
+# /etc/conf.d/premiumcoind: config file for /etc/init.d/premiumcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/premiumcoin/premiumcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/premiumcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/premiumcoind.pid"
+
+# Where to write premiumcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/premiumcoind"
+
+# User and group to own premiumcoind process
+#BITCOIND_USER="premiumcoin"
+#BITCOIND_GROUP="premiumcoin"
+
+# Path to premiumcoind executable
+#BITCOIND_BIN="/usr/bin/premiumcoind"
+
+# Nice value to run premiumcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

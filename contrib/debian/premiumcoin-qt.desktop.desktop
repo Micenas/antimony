@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=premiumcoin
+Comment=premiumcoin P2P Cryptocurrency
+Exec=premiumcoin-qt %u
+Terminal=false
+Type=Application
+Icon=premiumcoin128
+MimeType=x-scheme-handler/premiumcoin;
+Categories=Office;Finance;
+Name[en_US]=premiumcoin-qt.desktop

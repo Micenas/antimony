@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/premiumcoin_bg.qm</file>
+        <file alias="ca">locale/premiumcoin_ca.qm</file>
+        <file alias="cs">locale/premiumcoin_cs.qm</file>
+        <file alias="da">locale/premiumcoin_da.qm</file>
+        <file alias="de">locale/premiumcoin_de.qm</file>
+        <file alias="en">locale/premiumcoin_en.qm</file>
+        <file alias="en_US">locale/premiumcoin_en_US.qm</file>
+        <file alias="es">locale/premiumcoin_es.qm</file>
+        <file alias="fi">locale/premiumcoin_fi.qm</file>
+        <file alias="fr_FR">locale/premiumcoin_fr_FR.qm</file>
+        <file alias="it">locale/premiumcoin_it.qm</file>
+        <file alias="ja">locale/premiumcoin_ja.qm</file>
+        <file alias="ko_KR">locale/premiumcoin_ko_KR.qm</file>
+        <file alias="nl">locale/premiumcoin_nl.qm</file>
+        <file alias="pl">locale/premiumcoin_pl.qm</file>
+        <file alias="pt">locale/premiumcoin_pt.qm</file>
+        <file alias="pt_BR">locale/premiumcoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/premiumcoin_ro_RO.qm</file>
+        <file alias="ru">locale/premiumcoin_ru.qm</file>
+        <file alias="sk">locale/premiumcoin_sk.qm</file>
+        <file alias="sv">locale/premiumcoin_sv.qm</file>
+        <file alias="uk">locale/premiumcoin_uk.qm</file>
+        <file alias="zh_CN">locale/premiumcoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/premiumcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>
