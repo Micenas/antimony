@@ -1619,14 +1619,14 @@ int64_t GetBlockValue(int nHeight)
     CAmount nSlowSubsidy = 2 * COIN;
 
     if (nHeight == 0) {
-        nSubsidy = 24000000 * COIN;
+        nSubsidy = 33400000 * COIN;
    	 } 
-        else if (nHeight >= 1 && nHeight <= 500 ) {
-        nSubsidy = 10 * COIN;   
-     	} else if (nHeight <= 1500 && nHeight >= 501) {
-        nSubsidy = 10 * COIN;
-        } else if (nHeight > 1500) {
-        nSubsidy = 10 * COIN;
+        else if (nHeight >= 1 && nHeight <= 1036800 ) {
+        nSubsidy = 60 * COIN;   
+     	} else if (nHeight <= 4147200 && nHeight >= 1036801) {
+        nSubsidy = 30 * COIN;
+        } else if (nHeight >= 4147201) {
+        nSubsidy = 15 * COIN;
         } 
         else {
         nSubsidy = 0 * COIN;
