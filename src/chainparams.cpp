@@ -129,7 +129,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        MineGenesis(genesis);
+        //MineGenesis(genesis);
         vFixedSeeds.clear();
         vSeeds.clear();
         assert(hashGenesisBlock == uint256("0x000008aee8cf92784855d957425e10e9b06d9b94b33b696f6fab5f0500ba9968"));
