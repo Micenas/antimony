@@ -3,8 +3,8 @@
 Features
 =============
 
-* antimony Coin - Masternode
-* New PHI1612 PoW/MN algorithm thanks for 216k155
+* Antimony Coin - Masternode
+* PHI1612 PoW/MN algorithm thanks for 216k155
 * MN Reward
 
 
@@ -16,7 +16,7 @@ The antimony coin is a decentralized peer-to-peer banking financial platform, cr
 |:-----------|:-----------|
 | Block Size | `4MB` |
 | Block Time | `120s` |
-| PoW Reward | `10 ATMN` |*
+| PoW Reward | `60 ATMN` |*
 | Masternode Requirement | `5,000 ATMN` |
 | Port | `25676` |
 | RPC Port | `25674` |
@@ -24,10 +24,6 @@ The antimony coin is a decentralized peer-to-peer banking financial platform, cr
 | Reward Method  | `Teeter Totter Based Targeting System` | 
 
   
-
-*Instamine Protection: to prevent instamine, the first 500 blocks reward will be 2 ATMN , from block 501 to 1500 block reward will be 3, and from block 1501-infinite , block reward will be 50. Expected time to reach block 1501: 48 hours
-
-
 Build antimony Wallet
 ----------
 
