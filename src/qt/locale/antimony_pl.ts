@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE PRMC!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ATMN!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres premiumcoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres antimony jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
-        <source>Send coins to a premiumcoin address</source>
-        <translation>Wyślij monety do adresu premiumcoin</translation>
+        <source>Send coins to a antimony address</source>
+        <translation>Wyślij monety do adresu antimony</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
+        <source>&amp;About antimony Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about premiumcoin Core</source>
+        <source>Show information about antimony Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for premiumcoin</source>
-        <translation>Modyfikuj opcje konfiguracji premiumcoin</translation>
+        <source>Modify configuration options for antimony</source>
+        <translation>Modyfikuj opcje konfiguracji antimony</translation>
     </message>
     <message>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami premiumcoin, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami antimony, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu premiumcoin</translation>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu antimony</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a premiumcoin: URI or payment request</source>
-        <translation>Otwórz premiumcoin: URI i żądanie zapłaty</translation>
+        <source>Open a antimony: URI or payment request</source>
+        <translation>Otwórz antimony: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the premiumcoin Core help message to get a list with possible premiumcoin command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia premiumcoin, aby dostać listę możliwych opcji premiumcoin command-line</translation>
+        <source>Show the antimony Core help message to get a list with possible antimony command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia antimony, aby dostać listę możliwych opcji antimony command-line</translation>
     </message>
     <message>
-        <source>premiumcoin Core client</source>
-        <translation>Rdzeń premiumcoin klient</translation>
+        <source>antimony Core client</source>
+        <translation>Rdzeń antimony klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -916,7 +916,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -931,7 +931,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
@@ -1192,16 +1192,16 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start premiumcoin after logging in to the system.</source>
-        <translation>Automatycznie uruchom premiumcoin po zalogowaniu do systemu</translation>
+        <source>Automatically start antimony after logging in to the system.</source>
+        <translation>Automatycznie uruchom antimony po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start premiumcoin on system login</source>
-        <translation>&amp;Uruchom premiumcoin podczas logowania do systemu</translation>
+        <source>&amp;Start antimony on system login</source>
+        <translation>&amp;Uruchom antimony podczas logowania do systemu</translation>
     </message>
     <message>
-        <source>Amount of premiumcoin to keep anonymized</source>
-        <translation>Liczba premiumcoin do anonimizacji</translation>
+        <source>Amount of antimony to keep anonymized</source>
+        <translation>Liczba antimony do anonimizacji</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1220,8 +1220,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting premiumcoin.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie premiumcoin</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting antimony.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie antimony</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1230,8 +1230,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
 https://www.transifex.com/pivx-project/pivx-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the premiumcoin network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią premiumcoin poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the antimony network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią antimony poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1373,7 +1373,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations </translation>
         <translation>Status:</translation>
     </message>
     <message>
-        <source>0 PRMC / 0 Rounds</source>
+        <source>0 ATMN / 0 Rounds</source>
         <translation>0 OIVX / 0 Rund</translation>
     </message>
     <message>
@@ -1458,8 +1458,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a premiumcoin address (e.g. %1)</source>
-        <translation>Wprowadź adres premiumcoin (np. %1)</translation>
+        <source>Enter a antimony address (e.g. %1)</source>
+        <translation>Wprowadź adres antimony (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1897,8 +1897,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres premiumcoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres antimony jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1932,7 +1932,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>

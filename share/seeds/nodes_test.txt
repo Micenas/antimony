@@ -1,2 +1,2 @@
-# premiumcoin Developers 2017-2018
+# antimony Developers 2017-2018
 # List of fixed seed nodes for testnet

@@ -1,15 +1,15 @@
 raspi masternode guide by pazor
 
-PRMC v3 Wallet Masternode on Raspberry Pi 2 Model B
+ATMN v3 Wallet Masternode on Raspberry Pi 2 Model B
 (version: 1.0 - 10.10.2017 - pazor)
 SOURCES
 I rewrite the tutorial from Christian (BitSend).
 SPEED OF THE PI2
-The compiling of the needed file for the PRMC wallet/master node takes about 1.5/2h until done.
+The compiling of the needed file for the ATMN wallet/master node takes about 1.5/2h until done.
 The PI2 has an ARM kernel. So just downloading the 32bit version just doesnt cut it....
 PREREQUISITES?
 1. A raspberry Pi 2 model B
-2. 10000 PRMC
+2. 10000 ATMN
 3. Unlimited data from your ISP
 4. A stable highspeed internetconnection with a fixed IP address
 5. Know your way around your router OR learn how to
@@ -45,7 +45,7 @@ In the menu's somewhere there is a list of connected devices. They all have a IP
 Somewhere in the menus of your router you can do a DHCP reservation for the IP address of the PI2. This means everytime the PI2 boots it gets the same IPaddress. Thats what we want. We dont want it to change. Dunno your router so cannot help on this one :( Check manual or do a search on it. You should find some other tutorials.)
 Now also somewhere in the menu of the router there is a NAT or PORT FORWARD menu. Enter the IPaddress of the PI2 and open port 25676. Usally by just filling all portboxes with 25676, IN / OUT etc. Maybe you just have one box to put it in.
 Save the config of the router and reboot it. (also in the menus somewhere)
-You are now re-routes internet traffic on port 25676 (the PRMC p2p port) to your Pi2.
+You are now re-routes internet traffic on port 25676 (the ATMN p2p port) to your Pi2.
 Check http://www.yougetsignal.com/tools/open-ports/ and fill in port 25676 to find it open.
 7. Putty for a terminalconnection
 Now head to your desktop and download putty at www.chiark.greenend.org.uk/~sgtatham/putty/download.html. Take the top one Intel x86/32bit is fine.
@@ -56,7 +56,7 @@ Now we are gonna setup the PI2 just a little bit before continuing. From now on,
 'sudo raspi-config'
 You are shown a simple menu. We are gonna do options 1 2 and 3. Use the arrows and tab to navigate.
 1. Expand the filesystem so it uses the whole 32gb of the SDcard
-2. Change the password of the user pi. Make a strong password like you do so, is your premiumcoin wallet.
+2. Change the password of the user pi. Make a strong password like you do so, is your antimony wallet.
 3. Make it boot to command-line. So that way we safe some ram by not loading the desktop enviroment we will not be using at all.
 I forgot, if it reboots automaticly or manually. If manual, then:
 'sudo reboot'
@@ -108,15 +108,15 @@ It should say active.
 11. Preparing the build
 'ls'
 You will see a empty directory 
-We are now gonna download the newest whole premiumcoin source from which we will compile the file needed to run the premiumcoin wallet (daemon), premiumcoind
-'git clone https://github.com/ENZcoin/premiumcoin.git'
+We are now gonna download the newest whole antimony source from which we will compile the file needed to run the antimony wallet (daemon), antimonyd
+'git clone https://github.com/ENZcoin/antimony.git'
 'ls'
-there should be now a directory premiumcoin
+there should be now a directory antimony
 12. now we build the Berkley DB 4.8 binaries
 '
-cd premiumcoin
+cd antimony
 ENZ_ROOT=$(pwd)
-# Pick some path to install BDB to, here we create a directory within the premiumcoin directory
+# Pick some path to install BDB to, here we create a directory within the antimony directory
 BDB_PREFIX="${ENZ_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 # Fetch the source and verify that it is not tampered with
@@ -129,7 +129,7 @@ cd db-4.8.30.NC/build_unix/
 #  Note: Do a static build so that it can be embedded into the exectuable, instead of having to find a .so at runtime
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
-# Configure premiumcoin Core to use our own-built instance of BDB
+# Configure antimony Core to use our own-built instance of BDB
 cd $ENZ_ROOT
 ./autogen.sh
 ./configure --enable-cxx --disable-shared --without-gui LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/ -O2"
@@ -140,14 +140,14 @@ after the successfull run of configure you can start now the compiling by using 
 Go outside and do something healthy and check back in 2h.
 NOTE1: This will take lots of time and gives errors about arm6 and arm7. Ignore it, let it run. Be aware that closing Putty stops the build so leave it open. 
 14. Checking stuff 'n setting up
-you are still in the premiumcoin folder.
-Now we install the premiumcoin wallet by:
+you are still in the antimony folder.
+Now we install the antimony wallet by:
 'make install'
 every compiled/builded binary will now installed into /usr/local/bin
 return to /root by entering 
 'cd'
 We need to make a configfile in there with an commandprompt file-editor Joe, which you installed earlier:
-joe premiumcoin.conf
+joe antimony.conf
 Type the following in the empty editor or paste this with just a rightmousebuttonclick in the putty screen.
 rpcuser=RANDOMSTRINGOFLETTERSANDNUMBERS
 rpcpassword=LONGERRANDOMSTRINGOFLETTERSANDNUMBERSHAVEFUN
@@ -170,7 +170,7 @@ type the following
 Masternode1 yourStaticIPaddress:25676 masternodeprivkey collateral_output_txid collateral_output_index
 Hit CONTROL - K then CONTROL - X to save and exit Joe.
 For added security, it is recommended to make this file "Read Only" so no one can change it:
-chmod 444 masternode.conf premiumcoin.conf
+chmod 444 masternode.conf antimony.conf
 NOTE1: rpcuser and rpcpassword can be anything, you DONT have to remember them later. Only use letters and numbers.
 NOTE2: Check and recheck. it usually goes wrong here with a typo.
 To preset some settings to make it work we make a directory called .ENZV3 and enter it with:
@@ -178,13 +178,13 @@ mkdir .ENZV3
 cd .ENZV3
 NOTE: this is the workingdirectory of the masternode. Its there, but hidden.
 make symbolic links to the both files in the working directory for easy usage
-ln -s /root/premiumcoin.conf premiumcoin.conf
+ln -s /root/antimony.conf antimony.conf
 ln -s /root/masternode.conf masternode.conf
 Leave the dir one up back to your home directory:
 cd ..
 14. Lets fire it up for the first time
-Run your premiumcoin daemon for the first time:
-premiumcoind
+Run your antimony daemon for the first time:
+antimonyd
 You will see the message like "Server Starting". It will now startup and configure itself. Also it will go download the blockchain. This will take some time, and only happens once. Check if files are being made with:
 cd .ENZV3
 ls
@@ -194,17 +194,17 @@ Fire up another putty and at prompt check its progress with:
 top
 The CPU is 100% all the time. When its done it is just about 10%:
 When done, close the second putty and return to the first one and check stats:
-premiumcoin-cli getinfo
-Check the blockcount and check if its the same at https://chainz.cryptoid.info/PRMC See blockheight. If its the same and cpu premiumcoind is max 10% all the time you know its done.
+antimony-cli getinfo
+Check the blockcount and check if its the same at https://chainz.cryptoid.info/ATMN See blockheight. If its the same and cpu antimonyd is max 10% all the time you know its done.
 15. Linking it to your local wallet on your desktop pc.
 32. We are now gonna make a private key so your masternode and local wallet can talk to eachother:
-premiumcoin-cli masternode genkey
-NOTE: Dont worry, this is not a key to get to your 10000 premiumcoin. They are still safe in your local wallet protected with its own privatekey.
+antimony-cli masternode genkey
+NOTE: Dont worry, this is not a key to get to your 10000 antimony. They are still safe in your local wallet protected with its own privatekey.
 Select the generated string with your mouse. You dont need to copy it. Dragging mouse copies it automaticly.
 Stop the the masternode and enter the hidden .ENZV3 directory again and edit the configfile:
-premiumcoin-cli stop
+antimony-cli stop
 cd .ENZV3
-joe premiumcoin.conf
+joe antimony.conf
 Delete the long XXXXXXX-string and paste the string with a right mousebutton click on the putty screen. Also change masternode=0 to masternode=1 and save n quit with CONTROL - K then CONTROL - X
 enter the XXXXXXX-string to the masternode configuration file too 
 joe masternode.conf
@@ -212,17 +212,17 @@ After leave the dir again to your home directory.
 cd ..
 16. Starting your masternode permanently!
 Restart the deamon and wait for it to idle (remember, you can check with another putty with command 'top' remember?, again takes a bit of time)
-premiumcoind
+antimonyd
 Useful commands to check if your masternode is running ok:
-# premiumcoin-cli getinfo
+# antimony-cli getinfo
 Check version number and block count vs website
-# premiumcoin-cli masternode debug
+# antimony-cli masternode debug
 It should say: masternode successfully started. 
 If anything else its NOT working ok. use this only if you end this tutorial.
-premiumcoin-cli masternode list | grep collateral_output_txid
+antimony-cli masternode list | grep collateral_output_txid
 Check if your ip is red and the line ends with a 1 like: "YOUREXTERNALIPADDRESS:25676" : 1. Then you know its connectes and seen on the network.
 CONGRATS SO FAR! THE HARD WORK IS DONE! 
-for currently configuring the masternode please read also the masternodeguides of cryptonid or ask on the PRMC Slack forum for support.
-collateral_output_txid      is the transaction id of the transaction where the 10000 PRMC deposit sended to your masternode wallet
+for currently configuring the masternode please read also the masternodeguides of cryptonid or ask on the ATMN Slack forum for support.
+collateral_output_txid      is the transaction id of the transaction where the 10000 ATMN deposit sended to your masternode wallet
 collateral_output_index     is the index of the deposit transaction
 

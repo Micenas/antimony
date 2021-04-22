@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "premiumcoin"
-            VALUE "FileDescription",    "premiumcoind (OSS daemon/client for premiumcoin)"
+            VALUE "CompanyName",        "antimony"
+            VALUE "FileDescription",    "antimonyd (OSS daemon/client for antimony)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "premiumcoind"
+            VALUE "InternalName",       "antimonyd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "premiumcoind.exe"
-            VALUE "ProductName",        "premiumcoind"
+            VALUE "OriginalFilename",   "antimonyd.exe"
+            VALUE "ProductName",        "antimonyd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

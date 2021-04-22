@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: premiumcoind.service
-Upstart: premiumcoind.conf
-OpenRC:  premiumcoind.openrc
-         premiumcoind.openrcconf
-CentOS:  premiumcoind.init
+SystemD: antimonyd.service
+Upstart: antimonyd.conf
+OpenRC:  antimonyd.openrc
+         antimonyd.openrcconf
+CentOS:  antimonyd.init
 
 have been made available to assist packagers in creating node packages here.
 

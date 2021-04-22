@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * premiumcoin RPC command dispatcher.
+ * antimony RPC command dispatcher.
  */
 class CRPCTable
 {

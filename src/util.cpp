@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The premiumcoin developers
+// Copyright (c) 2017-2018 The antimony developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/premiumcoin-config.h"
+#include "config/antimony-config.h"
 #endif
 
 #include "util.h"
@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-//premiumcoin only features
+//antimony only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
@@ -114,7 +114,7 @@ bool fLiteMode = false;
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
 int nObfuscationRounds = 2;
-int nAnonymizepremiumcoinAmount = 1000;
+int nAnonymizeantimonyAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -232,8 +232,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "premiumcoin" is a composite category enabling all premiumcoin-related debug output
-            if (ptrCategory->count(string("premiumcoin"))) {
+            // "antimony" is a composite category enabling all antimony-related debug output
+            if (ptrCategory->count(string("antimony"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swifttx"));
                 ptrCategory->insert(string("masternode"));
@@ -396,7 +396,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "premiumcoin";
+    const char* pszModule = "antimony";
 #endif
     if (pex)
         return strprintf(
@@ -417,13 +417,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\premiumcoin
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\premiumcoin
-// Mac: ~/Library/Application Support/premiumcoin
-// Unix: ~/.premiumcoin
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\antimony
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\antimony
+// Mac: ~/Library/Application Support/antimony
+// Unix: ~/.antimony
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "premiumcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "antimony";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -435,10 +435,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "premiumcoin";
+    return pathRet / "antimony";
 #else
     // Unix
-    return pathRet / ".premiumcoin";
+    return pathRet / ".antimony";
 #endif
 #endif
 }
@@ -485,7 +485,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "premiumcoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "antimony.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -504,7 +504,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty premiumcoin.conf if it does not exist
+        // Create empty antimony.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -515,7 +515,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override premiumcoin.conf
+        // Don't overwrite existing settings so command line settings override antimony.conf
         string strKey = string("-") + it->string_key;
     	string strValue = it->value[0];
 	InterpretNegativeSetting(strKey, strValue);
@@ -531,7 +531,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "premiumcoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "antimonyd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

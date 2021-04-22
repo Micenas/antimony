@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/premiumcoin-crypto/premiumcoin/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/antimony-crypto/antimony/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/premiumcoin-crypto/gitian.sigs.git
-    git clone https://github.com/premiumcoin-crypto/premiumcoin-detached-sigs.git
+    git clone https://github.com/antimony-crypto/gitian.sigs.git
+    git clone https://github.com/antimony-crypto/antimony-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/premiumcoin-crypto/premiumcoin.git
+    git clone https://github.com/antimony-crypto/antimony.git
 
-### premiumcoin maintainers/release engineers, suggestion for writing release notes
+### antimony maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./premiumcoin
+    pushd ./antimony
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../premiumcoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../antimony/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,50 +92,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url premiumcoin=/path/to/premiumcoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url antimony=/path/to/antimony,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign premiumcoin Core for Linux, Windows, and OS X:
+### Build and sign antimony Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit premiumcoin=v${VERSION} ../premiumcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../premiumcoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/premiumcoin-*.tar.gz build/out/src/premiumcoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit antimony=v${VERSION} ../antimony/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../antimony/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/antimony-*.tar.gz build/out/src/antimony-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit premiumcoin=v${VERSION} ../premiumcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../premiumcoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/premiumcoin-*-win-unsigned.tar.gz inputs/premiumcoin-win-unsigned.tar.gz
-    mv build/out/premiumcoin-*.zip build/out/premiumcoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit antimony=v${VERSION} ../antimony/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../antimony/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/antimony-*-win-unsigned.tar.gz inputs/antimony-win-unsigned.tar.gz
+    mv build/out/antimony-*.zip build/out/antimony-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit premiumcoin=v${VERSION} ../premiumcoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../premiumcoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/premiumcoin-*-osx-unsigned.tar.gz inputs/premiumcoin-osx-unsigned.tar.gz
-    mv build/out/premiumcoin-*.tar.gz build/out/premiumcoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit antimony=v${VERSION} ../antimony/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../antimony/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/antimony-*-osx-unsigned.tar.gz inputs/antimony-osx-unsigned.tar.gz
+    mv build/out/antimony-*.tar.gz build/out/antimony-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`premiumcoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`premiumcoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`premiumcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `premiumcoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`premiumcoin-${VERSION}-osx-unsigned.dmg`, `premiumcoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`antimony-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`antimony-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`antimony-${VERSION}-win[32|64]-setup-unsigned.exe`, `antimony-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`antimony-${VERSION}-osx-unsigned.dmg`, `antimony-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import premiumcoin/contrib/gitian-keys/*.pgp
+    gpg --import antimony/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../premiumcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../premiumcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../premiumcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../antimony/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../antimony/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../antimony/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -156,22 +156,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer premiumcoin-osx-unsigned.tar.gz to osx for signing
-    tar xf premiumcoin-osx-unsigned.tar.gz
+    transfer antimony-osx-unsigned.tar.gz to osx for signing
+    tar xf antimony-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf premiumcoin-win-unsigned.tar.gz
+    tar xf antimony-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/premiumcoin-detached-sigs
+    cd ~/antimony-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -184,25 +184,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [premiumcoin-detached-sigs](https://github.com/premiumcoin-crypto/premiumcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [antimony-detached-sigs](https://github.com/antimony-crypto/antimony-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../premiumcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../premiumcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../premiumcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/premiumcoin-osx-signed.dmg ../premiumcoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../antimony/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../antimony/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../antimony/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/antimony-osx-signed.dmg ../antimony-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../premiumcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../premiumcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../premiumcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/premiumcoin-*win64-setup.exe ../premiumcoin-${VERSION}-win64-setup.exe
-    mv build/out/premiumcoin-*win32-setup.exe ../premiumcoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../antimony/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../antimony/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../antimony/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/antimony-*win64-setup.exe ../antimony-${VERSION}-win64-setup.exe
+    mv build/out/antimony-*win32-setup.exe ../antimony-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -224,23 +224,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-premiumcoin-${VERSION}-aarch64-linux-gnu.tar.gz
-premiumcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-premiumcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-premiumcoin-${VERSION}-x86_64-linux-gnu.tar.gz
-premiumcoin-${VERSION}-osx64.tar.gz
-premiumcoin-${VERSION}-osx.dmg
-premiumcoin-${VERSION}.tar.gz
-premiumcoin-${VERSION}-win32-setup.exe
-premiumcoin-${VERSION}-win32.zip
-premiumcoin-${VERSION}-win64-setup.exe
-premiumcoin-${VERSION}-win64.zip
+antimony-${VERSION}-aarch64-linux-gnu.tar.gz
+antimony-${VERSION}-arm-linux-gnueabihf.tar.gz
+antimony-${VERSION}-i686-pc-linux-gnu.tar.gz
+antimony-${VERSION}-x86_64-linux-gnu.tar.gz
+antimony-${VERSION}-osx64.tar.gz
+antimony-${VERSION}-osx.dmg
+antimony-${VERSION}.tar.gz
+antimony-${VERSION}-win32-setup.exe
+antimony-${VERSION}-win32.zip
+antimony-${VERSION}-win64-setup.exe
+antimony-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the premiumcoin.org server*.
+space *do not upload these to the antimony.org server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -256,10 +256,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/premiumcoincoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/antimonycoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/premiumcoin-crypto/premiumcoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/antimony-crypto/antimony/releases/new) with a link to the archived release notes.
 
   - Celebrate

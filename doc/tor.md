@@ -1,7 +1,7 @@
-TOR SUPPORT IN premiumcoin
+TOR SUPPORT IN antimony
 =======================
 
-It is possible to run premiumcoin as a Tor hidden service, and connect to such services.
+It is possible to run antimony as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run premiumcoin behind a Tor proxy
+Run antimony behind a Tor proxy
 ----------------------------------
 
-The first step is running premiumcoin behind a Tor proxy. This will already make all
+The first step is running antimony behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -38,15 +38,15 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 ```
-./premiumcoind -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=FIXME_ADDRESS_TOR
+./antimonyd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=FIXME_ADDRESS_TOR
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./premiumcoind -proxy=127.0.0.1:9050
+./antimonyd -proxy=127.0.0.1:9050
 ```
 
-Run a premiumcoin hidden server
+Run a antimony hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -58,7 +58,7 @@ SOCKSPort 9050
 SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
-HiddenServiceDir /var/lib/tor/premiumcoin/
+HiddenServiceDir /var/lib/tor/antimony/
 HiddenServicePort 989 127.0.0.1:51472
 HiddenServiceStatistics 0
 ORPort 9001
@@ -69,12 +69,12 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your premiumcoind's P2P listen port (25674 by default).
+your antimonyd's P2P listen port (25674 by default).
 ```
--externalip=X   You can tell premiumcoin about its publicly reachable address using
+-externalip=X   You can tell antimony about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
-                /var/lib/tor/premiumcoin-service/hostname. Onion addresses are given
+                /var/lib/tor/antimony-service/hostname. Onion addresses are given
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
                 Tor proxy typically runs).
@@ -92,14 +92,14 @@ your premiumcoind's P2P listen port (25674 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./premiumcoind -proxy=127.0.0.1:9050 -externalip=FIXME_ADDRESS_TOR -listen
+./antimonyd -proxy=127.0.0.1:9050 -externalip=FIXME_ADDRESS_TOR -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 ```
-./premiumcoind ... -discover
+./antimonyd ... -discover
 ```
 
 and open port 51472 on your firewall (or use -upnp).
@@ -107,10 +107,10 @@ and open port 51472 on your firewall (or use -upnp).
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./premiumcoind -onion=127.0.0.1:9050 -externalip=FIXME_ADDRESS_TOR -discover
+./antimonyd -onion=127.0.0.1:9050 -externalip=FIXME_ADDRESS_TOR -discover
 ```
 
-List of known premiumcoin Tor relays
+List of known antimony Tor relays
 ------------------------------------
 ```
 FIXME_ADDRESS_TOR

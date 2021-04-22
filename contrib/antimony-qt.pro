@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/premiumcoin-config.h \
+           src/antimony-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/premiumcoin-config.h \
+           src/config/antimony-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -330,7 +330,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/premiumcoin.moc \
+           src/qt/antimony.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -371,9 +371,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/premiumcoin-cli.cpp \
-           src/premiumcoin-tx.cpp \
-           src/premiumcoin.cpp \
+           src/antimony-cli.cpp \
+           src/antimony-tx.cpp \
+           src/antimony.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -468,8 +468,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/premiumcoin.cpp \
-           src/qt/premiumcoinstrings.cpp \
+           src/qt/antimony.cpp \
+           src/qt/antimonystrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -547,7 +547,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_premiumcoin.cpp \
+           src/test/test_antimony.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -638,21 +638,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/premiumcoin.qrc src/qt/premiumcoin_locale.qrc
+RESOURCES += src/qt/antimony.qrc src/qt/antimony_locale.qrc
 
-TRANSLATIONS += src/qt/locale/premiumcoin_bg.ts \
-                src/qt/locale/premiumcoin_de.ts \
-                src/qt/locale/premiumcoin_en.ts \
-                src/qt/locale/premiumcoin_es.ts \
-                src/qt/locale/premiumcoin_fi.ts \
-                src/qt/locale/premiumcoin_fr.ts \
-                src/qt/locale/premiumcoin_it.ts \
-                src/qt/locale/premiumcoin_ja.ts \
-                src/qt/locale/premiumcoin_pl.ts \
-                src/qt/locale/premiumcoin_pt.ts \
-                src/qt/locale/premiumcoin_ru.ts \
-                src/qt/locale/premiumcoin_sk.ts \
-                src/qt/locale/premiumcoin_sv.ts \
-                src/qt/locale/premiumcoin_vi.ts \
-                src/qt/locale/premiumcoin_zh_CN.ts \
-                src/qt/locale/premiumcoin_zh_TW.ts
+TRANSLATIONS += src/qt/locale/antimony_bg.ts \
+                src/qt/locale/antimony_de.ts \
+                src/qt/locale/antimony_en.ts \
+                src/qt/locale/antimony_es.ts \
+                src/qt/locale/antimony_fi.ts \
+                src/qt/locale/antimony_fr.ts \
+                src/qt/locale/antimony_it.ts \
+                src/qt/locale/antimony_ja.ts \
+                src/qt/locale/antimony_pl.ts \
+                src/qt/locale/antimony_pt.ts \
+                src/qt/locale/antimony_ru.ts \
+                src/qt/locale/antimony_sk.ts \
+                src/qt/locale/antimony_sv.ts \
+                src/qt/locale/antimony_vi.ts \
+                src/qt/locale/antimony_zh_CN.ts \
+                src/qt/locale/antimony_zh_TW.ts

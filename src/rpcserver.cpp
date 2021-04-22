@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The premiumcoin developers
+// Copyright (c) 2017-2018 The antimony developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop premiumcoin server.");
+            "\nStop antimony server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "premiumcoin server stopping";
+    return "antimony server stopping";
 }
 
 
@@ -301,35 +301,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Pivx features */
-        {"premiumcoin", "masternode", &masternode, true, true, false},
-        {"premiumcoin", "listmasternodes", &listmasternodes, true, true, false},
-        {"premiumcoin", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"premiumcoin", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"premiumcoin", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"premiumcoin", "masternodedebug", &masternodedebug, true, true, false},
-        {"premiumcoin", "startmasternode", &startmasternode, true, true, false},
-        {"premiumcoin", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"premiumcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"premiumcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"premiumcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"premiumcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"premiumcoin", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"premiumcoin", "mnbudget", &mnbudget, true, true, false},
-        {"premiumcoin", "preparebudget", &preparebudget, true, true, false},
-        {"premiumcoin", "submitbudget", &submitbudget, true, true, false},
-        {"premiumcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"premiumcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"premiumcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"premiumcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"premiumcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"premiumcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"premiumcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"premiumcoin", "checkbudgets", &checkbudgets, true, true, false},
-        {"premiumcoin", "mnsync", &mnsync, true, true, false},
-        {"premiumcoin", "spork", &spork, true, true, false},
-        {"premiumcoin", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"antimony", "masternode", &masternode, true, true, false},
+        {"antimony", "listmasternodes", &listmasternodes, true, true, false},
+        {"antimony", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"antimony", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"antimony", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"antimony", "masternodedebug", &masternodedebug, true, true, false},
+        {"antimony", "startmasternode", &startmasternode, true, true, false},
+        {"antimony", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"antimony", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"antimony", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"antimony", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"antimony", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"antimony", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"antimony", "mnbudget", &mnbudget, true, true, false},
+        {"antimony", "preparebudget", &preparebudget, true, true, false},
+        {"antimony", "submitbudget", &submitbudget, true, true, false},
+        {"antimony", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"antimony", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"antimony", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"antimony", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"antimony", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"antimony", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"antimony", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"antimony", "checkbudgets", &checkbudgets, true, true, false},
+        {"antimony", "mnsync", &mnsync, true, true, false},
+        {"antimony", "spork", &spork, true, true, false},
+        {"antimony", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"premiumcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"antimony", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -594,16 +594,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use premiumcoind, or the -server option to premiumcoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use antimonyd, or the -server option to antimony-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=premiumcoinrpc\n"
+                                               "rpcuser=antimonyrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"premiumcoin Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"antimony Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1054,7 +1054,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> premiumcoin-cli " + methodname + " " + args + "\n";
+    return "> antimony-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

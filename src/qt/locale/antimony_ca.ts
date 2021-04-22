@@ -164,7 +164,7 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
         <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ENZS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
-        <translation>&amp;Sobre premiumcoin Core</translation>
+        <source>&amp;About antimony Core</source>
+        <translation>&amp;Sobre antimony Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
-        <source>About premiumcoin Core</source>
-        <translation>Sobre premiumcoin Core</translation>
+        <source>About antimony Core</source>
+        <translation>Sobre antimony Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to premiumcoin Core.</source>
-        <translation>Benvingut a premiumcoin Core.</translation>
+        <source>Welcome to antimony Core.</source>
+        <translation>Benvingut a antimony Core.</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1132,8 +1132,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
         <source>Version %1</source>

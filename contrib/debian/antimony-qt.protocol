@@ -1,6 +1,6 @@
 [Protocol]
-exec=premiumcoin-qt '%u'
-protocol=premiumcoin
+exec=antimony-qt '%u'
+protocol=antimony
 input=none
 output=none
 helper=true

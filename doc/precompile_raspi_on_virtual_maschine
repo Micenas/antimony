@@ -2,7 +2,7 @@
 variant suggested by davembg
 https://bitcointalk.org/index.php?topic=580725.msg27132527#msg27132527
 
-building the PRMC wallet on the RPi can take forever and fail multiple times before succeeding (if ever).
+building the ATMN wallet on the RPi can take forever and fail multiple times before succeeding (if ever).
 I recommend using the depends toolkit and building the ARM/RASPi wallet on Debian 9 (VM or install).
 Then, you just need a Raspberry Pi with Raspbian installed, and you can copy the wallet with no dependencies.
 https://www.raspberrypi.org/downloads/raspbian/
@@ -15,11 +15,11 @@ Install the build environment dependencies for the Raspberry Pi -
 Code:
 sudo apt install build-essential libtool autotools-dev autoconf pkg-config curl gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 
-build the dependencies for the PRMC wallet without the GUI (cli only) building for QT needs work -
+build the dependencies for the ATMN wallet without the GUI (cli only) building for QT needs work -
 Code:
 cd depends && make HOST=aarch64-linux-gnu NO_QT=1
 
-Change back to the PRMC root directory
+Change back to the ATMN root directory
 Code:
 cd ..
 
@@ -37,9 +37,9 @@ make
 
 Strip the debug symbols -
 Code:
-aarch64-linux-gnu-strip src/premiumcoind src/premiumcoin-cli src/premiumcoin-tx
+aarch64-linux-gnu-strip src/antimonyd src/antimony-cli src/antimony-tx
 
-Grab those three files (src/premiumcoind src/premiumcoin-cli src/premiumcoin-tx),
+Grab those three files (src/antimonyd src/antimony-cli src/antimony-tx),
 and copy them to your raspberry pi via the SD card or scp/sftp.
 
 Startup scripts for the Raspberry Pi are more complicated using either System V or Systemd.

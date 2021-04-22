@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi premiumcoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your antimony addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi antimony per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi premiumcoin per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your antimony addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi antimony per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>premiumcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
-        <translation>premiumcoin verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi PRMC dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>antimony will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
+        <translation>antimony verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ATMN dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI PRMC&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI ATMN&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -247,8 +247,8 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>L'indirizzo premiumcoin per firmare il messaggio con</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>L'indirizzo antimony per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo premiumcoin</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo antimony</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>L'indirizzo premiumcoin con cui è stato firmato il messaggio</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>L'indirizzo antimony con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo premiumcoin specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo antimony specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,12 +590,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
-        <source>Send coins to a premiumcoin address</source>
-        <translation>Invia monete all' indirizzo premiumcoin</translation>
+        <source>Send coins to a antimony address</source>
+        <translation>Invia monete all' indirizzo antimony</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
-        <translation>&amp;Informazioni premiumcoin Core</translation>
+        <source>&amp;About antimony Core</source>
+        <translation>&amp;Informazioni antimony Core</translation>
     </message>
     <message>
-        <source>Show information about premiumcoin Core</source>
-        <translation>Visualizza informazioni su premiumcoin Core</translation>
+        <source>Show information about antimony Core</source>
+        <translation>Visualizza informazioni su antimony Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for premiumcoin</source>
-        <translation>Modifica le opzioni di configurazione per premiumcoin</translation>
+        <source>Modify configuration options for antimony</source>
+        <translation>Modifica le opzioni di configurazione per antimony</translation>
     </message>
     <message>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi premiumcoin per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi antimony per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi premiumcoin specifici</translation>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi antimony specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a premiumcoin: URI or payment request</source>
-        <translation>Apri un premiumcoin: URI o richiesta di pagamento</translation>
+        <source>Open a antimony: URI or payment request</source>
+        <translation>Apri un antimony: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the premiumcoin Core help message to get a list with possible premiumcoin command-line options</source>
-        <translation>Mostra il messaggio di aiuto premiumcoin Core per ottenere un elenco con le possibili opzioni di riga di comando premiumcoin</translation>
+        <source>Show the antimony Core help message to get a list with possible antimony command-line options</source>
+        <translation>Mostra il messaggio di aiuto antimony Core per ottenere un elenco con le possibili opzioni di riga di comando antimony</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -893,8 +893,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -920,8 +920,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>L'indirizzo premiumcoin per firmare il messaggio con</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>L'indirizzo antimony per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo premiumcoin</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo antimony</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>L'indirizzo premiumcoin con cui è stato firmato il messaggio</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>L'indirizzo antimony con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo premiumcoin specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo antimony specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     </context>
 <context>

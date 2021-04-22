@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your premiumcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your antimony addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your premiumcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your antimony addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>premiumcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
+        <source>antimony will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The premiumcoin address to sign the message with</source>
+        <source>The antimony address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this premiumcoin address</source>
+        <source>Sign the message to prove you own this antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The premiumcoin address the message was signed with</source>
+        <source>The antimony address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -771,12 +771,12 @@
     <message>
         <location line="-396"/>
         <location line="+831"/>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-652"/>
-        <source>Send coins to a premiumcoin address</source>
+        <source>Send coins to a antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -796,27 +796,27 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About premiumcoin Core</source>
+        <source>&amp;About antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about premiumcoin Core</source>
+        <source>Show information about antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for premiumcoin</source>
+        <source>Modify configuration options for antimony</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a premiumcoin: URI or payment request</source>
+        <source>Open a antimony: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,17 +871,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the premiumcoin Core help message to get a list with possible premiumcoin command-line options</source>
+        <source>Show the antimony Core help message to get a list with possible antimony command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+201"/>
-        <source>premiumcoin Core client</source>
+        <source>antimony Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+190"/>
-        <source>%n active connection(s) to premiumcoin network</source>
+        <source>%n active connection(s) to antimony network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1456,7 +1456,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid premiumcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid antimony address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1512,7 +1512,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About premiumcoin Core</source>
+        <source>About antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1581,17 +1581,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to premiumcoin Core.</source>
+        <source>Welcome to antimony Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where premiumcoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where antimony Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>premiumcoin Core will download and store a copy of the premiumcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>antimony Core will download and store a copy of the antimony block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1782,8 +1782,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other premiumcoin addresses after it matures.
-To Add: enter percentage to give and premiumcoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other antimony addresses after it matures.
+To Add: enter percentage to give and antimony address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1948,12 +1948,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 5000 PRMC</source>
+        <source>Use 2 separate masternodes to mix funds up to 5000 ATMN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 5000 PRMC</source>
+        <source>Use 8 separate masternodes to mix funds up to 5000 ATMN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1963,12 +1963,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 PRMC to anonymize 5000 PRMC</source>
+        <source>This option is the quickest and will cost about ~0.025 ATMN to anonymize 5000 ATMN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 PRMC to anonymize 5000 PRMC</source>
+        <source>This option is moderately fast and will cost about 0.05 ATMN to anonymize 5000 ATMN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1978,7 +1978,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 PRMC per 5000 PRMC you anonymize.</source>
+        <source>0.1 ATMN per 5000 ATMN you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,17 +1990,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening premiumcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening antimony&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening premiumcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening antimony&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening premiumcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening antimony&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2076,7 +2076,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the premiumcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the antimony client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2101,12 +2101,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start premiumcoin after logging in to the system.</source>
+        <source>Automatically start antimony after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start premiumcoin on system login</source>
+        <source>&amp;Start antimony on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2126,7 +2126,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of premiumcoin to keep anonymized</source>
+        <source>Amount of antimony to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2161,7 +2161,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting premiumcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting antimony.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2177,7 +2177,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the premiumcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the antimony network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2374,7 +2374,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the premiumcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the antimony network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2429,7 +2429,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>0 PRMC / 0 Rounds</source>
+        <source>0 ATMN / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2666,7 +2666,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid premiumcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid antimony address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a premiumcoin address (e.g. %1)</source>
+        <source>Enter a antimony address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2969,7 +2969,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the premiumcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the antimony debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3181,7 +3181,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the premiumcoin RPC console.</source>
+        <source>Welcome to the antimony RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3272,12 +3272,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the premiumcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the antimony network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the premiumcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the antimony network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3570,7 +3570,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 PRMC</source>
+        <source>0 ATMN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3641,7 +3641,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for premiumcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for antimony transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3774,7 +3774,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+632"/>
-        <source>Warning: Invalid premiumcoin address</source>
+        <source>Warning: Invalid antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3918,7 +3918,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The premiumcoin address to send the payment to</source>
+        <source>The antimony address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the premiumcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the premiumcoin network.</source>
+        <source>A message that was attached to the antimony: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the antimony network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4007,7 +4007,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>premiumcoin Core is shutting down...</source>
+        <source>antimony Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4035,7 +4035,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The premiumcoin address to sign the message with</source>
+        <source>The antimony address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4077,17 +4077,17 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this premiumcoin address</source>
+        <source>Sign the message to prove you own this antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The premiumcoin address the message was signed with</source>
+        <source>The antimony address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4202,7 +4202,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>premiumcoin Core</source>
+        <source>antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4222,7 +4222,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The premiumcoin Core developers</source>
+        <source>The antimony Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PRMC.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ATMN.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5021,7 +5021,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. premiumcoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. antimony Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5046,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all premiumcoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all antimony specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5101,12 +5101,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PRMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in ATMN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PRMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in ATMN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5245,13 +5245,13 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;antimony Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. premiumcoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. antimony Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5261,12 +5261,12 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 PRMC.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 ATMN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 5000 PRMC.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 5000 ATMN.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5286,7 +5286,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong premiumcoin Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong antimony Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5471,12 +5471,12 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The premiumcoin Core Developers</source>
+        <source>Copyright (C) 2015-%i The antimony Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2017-%i The premiumcoin Core Developers</source>
+        <source>Copyright (C) 2017-%i The antimony Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5566,7 +5566,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of premiumcoin Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of antimony Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5631,7 +5631,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in PRMC/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in ATMN/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5706,7 +5706,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. premiumcoin Core is shutting down.</source>
+        <source>Initialization sanity check failed. antimony Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5846,7 +5846,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+53"/>
-        <source>Keep N PRMC anonymized (default: %u)</source>
+        <source>Keep N ATMN anonymized (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6481,7 +6481,7 @@ for example: alertnotify=echo %%s | mail -s &quot;premiumcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart premiumcoin Core to complete</source>
+        <source>Wallet needed to be rewritten: restart antimony Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

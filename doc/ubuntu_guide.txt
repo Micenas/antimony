@@ -31,43 +31,43 @@ sudo apt-get install libzmq3-dev (provides ZMQ API 4.x)
 
 Now lets start:
 
-Download premiumcoin coin  github source:
+Download antimony coin  github source:
 
 
-git clone https://github.com/premiumcoincoin/premiumcoin.git
+git clone https://github.com/antimonycoin/antimony.git
 
 Now we are going to compile the Client:
 
-chmod a+x+w -R premiumcoin/
-cd premiumcoin
+chmod a+x+w -R antimony/
+cd antimony
 ./autogen.sh
 ./configure
 make
 make install
 
-Now lets run the premiumcoin daemon:
+Now lets run the antimony daemon:
 
-premiumcoind &
+antimonyd &
 press enter
 
 
 We need to create our masternode Private Key.
 
-premiumcoin-cli masternode genkey
+antimony-cli masternode genkey
 
 copy the generated code to a text file
 
-Now we need our premiumcoin address:
+Now we need our antimony address:
 
-premiumcoin-cli getaccountaddress 0
+antimony-cli getaccountaddress 0
 
 copy the generated address to a text file
 
-Send 5000 premiumcoin to "address 0"
+Send 5000 antimony to "address 0"
 
-go to premiumcoin.conf in
+go to antimony.conf in
 
-./root/.premiumcoin/
+./root/.antimony/
 
 Paste this (dont forget to set rpcuser and password)
 
@@ -89,7 +89,7 @@ close config file.
 
 Now open 
 
-in /root/.premiumcoin/
+in /root/.antimony/
 
 masternode.conf
 
@@ -99,10 +99,10 @@ masternode.conf
 Quote
 mn1 127.0.0.1:25676 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
 
-set up your ip, masternode privkey, and TXID (of the 5000 PRMC)
+set up your ip, masternode privkey, and TXID (of the 5000 ATMN)
 
 
-now shutdown premiumcoind process and restart it
+now shutdown antimonyd process and restart it
 
 lets list all proccesses:
 
@@ -113,19 +113,19 @@ find the proccess number
 
 kill (process number)
 
-now restart premiumcoind
+now restart antimonyd
 
 and lets start it again:
 
-premiumcoind &
+antimonyd &
 
 
 Now let check our masternode status:
 
-premiumcoin-cli masternode status
+antimony-cli masternode status
 
 it will display if your wallet is masternode capable. if it does, just use command:  
 
 masternode start
 
-wait 10 seconds and use the command : premiumcoin-cli masternode list  (it should display a list of masternodes, check that your masternode is on the list).
+wait 10 seconds and use the command : antimony-cli masternode list  (it should display a list of masternodes, check that your masternode is on the list).

@@ -64,15 +64,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += premiumcoind
+  bin_PROGRAMS += antimonyd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += premiumcoin-cli premiumcoin-tx
+  bin_PROGRAMS += antimony-cli antimony-tx
 endif
 
 .PHONY: FORCE
-# premiumcoin core #
+# antimony core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between premiumcoind and premiumcoin-qt
+# server: shared between antimonyd and antimony-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between premiumcoind and premiumcoin-qt, but only linked
+# wallet: shared between antimonyd and antimony-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -301,7 +301,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between premiumcoind, and premiumcoin-qt and non-server tools
+# common: shared between antimonyd, and antimony-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -357,7 +357,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between premiumcoin-cli and premiumcoin-qt
+# cli: shared between antimony-cli and antimony-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -367,7 +367,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-premiumcoind_LDADD = \
+antimonyd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -378,26 +378,26 @@ premiumcoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-premiumcoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+antimonyd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-premiumcoind_LDADD += libbitcoin_wallet.a
+antimonyd_LDADD += libbitcoin_wallet.a
 endif
-premiumcoind_SOURCES = premiumcoind.cpp
+antimonyd_SOURCES = antimonyd.cpp
 #
 
 if TARGET_WINDOWS
-premiumcoind_SOURCES += premiumcoind-res.rc
+antimonyd_SOURCES += antimonyd-res.rc
 endif
 
-premiumcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-premiumcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-premiumcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+antimonyd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+antimonyd_CPPFLAGS = $(BITCOIN_INCLUDES)
+antimonyd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# premiumcoin-cli binary #
-premiumcoin_cli_LDADD = \
+# antimony-cli binary #
+antimony_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -405,14 +405,14 @@ premiumcoin_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-premiumcoin_cli_SOURCES = \
-  premiumcoin-cli.cpp
+antimony_cli_SOURCES = \
+  antimony-cli.cpp
 
-premiumcoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+antimony_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# premiumcoin-tx binary #
-premiumcoin_tx_LDADD = \
+# antimony-tx binary #
+antimony_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -421,15 +421,15 @@ premiumcoin_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-premiumcoin_tx_SOURCES = premiumcoin-tx.cpp
-premiumcoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+antimony_tx_SOURCES = antimony-tx.cpp
+antimony_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-premiumcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+antimony_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-premiumcoin_cli_SOURCES += premiumcoin-cli-res.rc
+antimony_cli_SOURCES += antimony-cli-res.rc
 endif
-premiumcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+antimony_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

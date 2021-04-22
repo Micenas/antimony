@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both premiumcoind and premiumcoin-qt, to make it harder for attackers to
+ * for both antimonyd and antimony-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("premiumcoin Core");
+const std::string CLIENT_NAME("antimony Core");
 
 /**
  * Client version number

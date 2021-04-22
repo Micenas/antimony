@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/premiumcoin-project/premiumcoin-project-translations).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/antimony-project/antimony-project-translations).

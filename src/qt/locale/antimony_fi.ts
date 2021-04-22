@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun premiumcoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your antimony addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun antimony osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun premiumcoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your antimony addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun antimony osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,15 +172,15 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>premiumcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
-        <translation>premiumcoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ENZien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>antimony will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
+        <translation>antimony sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ENZien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ENZisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>premiumcoin osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>antimony osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän premiumcoin osoitteen</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän antimony osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>premiumcoin osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>antimony osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla premiumcoin osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla antimony osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,12 +591,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Ydin</translation>
+        <source>antimony Core</source>
+        <translation>antimony Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a premiumcoin address</source>
-        <translation>Lähetä kolikkoja premiumcoin osoitteeseen</translation>
+        <source>Send coins to a antimony address</source>
+        <translation>Lähetä kolikkoja antimony osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
-        <translation>premiumcoin Core &amp;ytimestä</translation>
+        <source>&amp;About antimony Core</source>
+        <translation>antimony Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about premiumcoin Core</source>
-        <translation>Näytä tietoja premiumcoin Ytimestä</translation>
+        <source>Show information about antimony Core</source>
+        <translation>Näytä tietoja antimony Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for premiumcoin</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja premiumcoin:lle</translation>
+        <source>Modify configuration options for antimony</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja antimony:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä premiumcoin osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä antimony osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a premiumcoin: URI or payment request</source>
-        <translation>Avaa premiumcoin: URI tai pyydä maksua</translation>
+        <source>Open a antimony: URI or payment request</source>
+        <translation>Avaa antimony: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the premiumcoin Core help message to get a list with possible premiumcoin command-line options</source>
-        <translation>Näytä premiumcoin Ydin apuviesti saadaksesi lista mahdollisista premiumcoin komentolinja komennoista.</translation>
+        <source>Show the antimony Core help message to get a list with possible antimony command-line options</source>
+        <translation>Näytä antimony Ydin apuviesti saadaksesi lista mahdollisista antimony komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>premiumcoin Core client</source>
-        <translation>premiumcoin Ydin asiakasohjelma</translation>
+        <source>antimony Core client</source>
+        <translation>antimony Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Ydin</translation>
+        <source>antimony Core</source>
+        <translation>antimony Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to premiumcoin Core.</source>
-        <translation>Tervetuloa premiumcoin Ytimeen.</translation>
+        <source>Welcome to antimony Core.</source>
+        <translation>Tervetuloa antimony Ytimeen.</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Ydin</translation>
+        <source>antimony Core</source>
+        <translation>antimony Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 5000 PRMC</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 5000 premiumcoin</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 ATMN</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 5000 antimony</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 5000 PRMC</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 5000 premiumcoin</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 ATMN</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 5000 antimony</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PRMC to anonymize 5000 PRMC</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ENZ anonymoidaksesi 5000 premiumcoin</translation>
+        <source>This option is the quickest and will cost about ~0.025 ATMN to anonymize 5000 ATMN</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ENZ anonymoidaksesi 5000 antimony</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PRMC to anonymize 5000 PRMC</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 premiumcoin anonymoidaksesi 5000 premiumcoin</translation>
+        <source>This option is moderately fast and will cost about 0.05 ATMN to anonymize 5000 ATMN</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 antimony anonymoidaksesi 5000 antimony</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 PRMC per 5000 PRMC you anonymize.</source>
-        <translation>0.1 per 5000 premiumcoin, jotka anonymisoit.</translation>
+        <source>0.1 ATMN per 5000 ATMN you anonymize.</source>
+        <translation>0.1 per 5000 antimony, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,16 +1209,16 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start premiumcoin after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä premiumcoin kun kirjaudut sisään.</translation>
+        <source>Automatically start antimony after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä antimony kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start premiumcoin on system login</source>
-        <translation>&amp;Aloita premiumcoin järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start antimony on system login</source>
+        <translation>&amp;Aloita antimony järjestelmän kirjautumisessa</translation>
     </message>
     <message>
-        <source>Amount of premiumcoin to keep anonymized</source>
-        <translation>premiumcoin määrä joka pidetään anonymisoituna</translation>
+        <source>Amount of antimony to keep anonymized</source>
+        <translation>antimony määrä joka pidetään anonymisoituna</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1237,12 +1237,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting premiumcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting antimony.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the premiumcoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä premiumcoin verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the antimony network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä antimony verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1475,8 +1475,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the premiumcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa premiumcoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the antimony debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa antimony debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1587,8 +1587,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the premiumcoin RPC console.</source>
-        <translation>Tervetuloa premiumcoin RPC konsoliin.</translation>
+        <source>Welcome to the antimony RPC console.</source>
+        <translation>Tervetuloa antimony RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1630,12 +1630,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the premiumcoin network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana premiumcoin verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the antimony network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana antimony verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the premiumcoin network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana premiumcoin  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the antimony network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana antimony  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1835,8 +1835,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 PRMC</source>
-        <translation>0 PRMC</translation>
+        <source>0 ATMN</source>
+        <translation>0 ATMN</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1919,8 +1919,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid premiumcoin address</source>
-        <translation>Varoitus: Virheellinen premiumcoin osoite</translation>
+        <source>Warning: Invalid antimony address</source>
+        <translation>Varoitus: Virheellinen antimony osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1966,8 +1966,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The premiumcoin address to send the payment to</source>
-        <translation>premiumcoin osoite johon maksu lähetetään</translation>
+        <source>The antimony address to send the payment to</source>
+        <translation>antimony osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2009,8 +2009,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>premiumcoin Core is shutting down...</source>
-        <translation>premiumcoin core sammuu...</translation>
+        <source>antimony Core is shutting down...</source>
+        <translation>antimony core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2028,8 +2028,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>premiumcoin osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>antimony osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2060,16 +2060,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän premiumcoin osoitteen</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän antimony osoitteen</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>premiumcoin osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>antimony osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla premiumcoin osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla antimony osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2151,8 +2151,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Ydin</translation>
+        <source>antimony Core</source>
+        <translation>antimony Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2167,8 +2167,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The premiumcoin Core developers</source>
-        <translation>premiumcoin core kehittäjät</translation>
+        <source>The antimony Core developers</source>
+        <translation>antimony core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2521,8 +2521,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of premiumcoin Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version premiumcoin Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of antimony Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version antimony Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

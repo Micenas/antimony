@@ -1,32 +1,32 @@
-bin_PROGRAMS += qt/premiumcoin-qt
+bin_PROGRAMS += qt/antimony-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# premiumcoin qt core #
+# antimony qt core #
 QT_TS = \
-  qt/locale/premiumcoin_bg.ts \
-  qt/locale/premiumcoin_ca.ts \
-  qt/locale/premiumcoin_cs.ts \
-  qt/locale/premiumcoin_da.ts \
-  qt/locale/premiumcoin_de.ts \
-  qt/locale/premiumcoin_en.ts \
-  qt/locale/premiumcoin_en_US.ts \
-  qt/locale/premiumcoin_es.ts \
-  qt/locale/premiumcoin_fi.ts \
-  qt/locale/premiumcoin_fr_FR.ts \
-  qt/locale/premiumcoin_it.ts \
-  qt/locale/premiumcoin_ja.ts \
-  qt/locale/premiumcoin_ko_KR.ts \
-  qt/locale/premiumcoin_nl.ts \
-  qt/locale/premiumcoin_pl.ts \
-  qt/locale/premiumcoin_pt.ts \
-  qt/locale/premiumcoin_pt_BR.ts \
-  qt/locale/premiumcoin_ro_RO.ts \
-  qt/locale/premiumcoin_ru.ts \
-  qt/locale/premiumcoin_sk.ts \
-  qt/locale/premiumcoin_sv.ts \
-  qt/locale/premiumcoin_uk.ts \
-  qt/locale/premiumcoin_zh_CN.ts \
-  qt/locale/premiumcoin_zh_TW.ts
+  qt/locale/antimony_bg.ts \
+  qt/locale/antimony_ca.ts \
+  qt/locale/antimony_cs.ts \
+  qt/locale/antimony_da.ts \
+  qt/locale/antimony_de.ts \
+  qt/locale/antimony_en.ts \
+  qt/locale/antimony_en_US.ts \
+  qt/locale/antimony_es.ts \
+  qt/locale/antimony_fi.ts \
+  qt/locale/antimony_fr_FR.ts \
+  qt/locale/antimony_it.ts \
+  qt/locale/antimony_ja.ts \
+  qt/locale/antimony_ko_KR.ts \
+  qt/locale/antimony_nl.ts \
+  qt/locale/antimony_pl.ts \
+  qt/locale/antimony_pt.ts \
+  qt/locale/antimony_pt_BR.ts \
+  qt/locale/antimony_ro_RO.ts \
+  qt/locale/antimony_ru.ts \
+  qt/locale/antimony_sk.ts \
+  qt/locale/antimony_sv.ts \
+  qt/locale/antimony_uk.ts \
+  qt/locale/antimony_zh_CN.ts \
+  qt/locale/antimony_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -108,16 +108,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/premiumcoin.moc \
+  qt/antimony.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_premiumcoin.cpp
-QT_QRC = qt/premiumcoin.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_premiumcoin_locale.cpp
-QT_QRC_LOCALE = qt/premiumcoin_locale.qrc
+QT_QRC_CPP = qt/qrc_antimony.cpp
+QT_QRC = qt/antimony.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_antimony_locale.cpp
+QT_QRC_LOCALE = qt/antimony_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -232,12 +232,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_premiumcoin.png \
-  qt/res/icons/unit_mpremiumcoin.png \
-  qt/res/icons/unit_upremiumcoin.png \
-  qt/res/icons/unit_tpremiumcoin.png \
-  qt/res/icons/unit_tmpremiumcoin.png \
-  qt/res/icons/unit_tupremiumcoin.png
+  qt/res/icons/unit_antimony.png \
+  qt/res/icons/unit_mantimony.png \
+  qt/res/icons/unit_uantimony.png \
+  qt/res/icons/unit_tantimony.png \
+  qt/res/icons/unit_tmantimony.png \
+  qt/res/icons/unit_tuantimony.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -305,7 +305,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/premiumcoin_logo_horizontal.png \
+  qt/res/images/antimony_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -321,7 +321,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/premiumcoin-qt-res.rc
+BITCOIN_RC = qt/res/antimony-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -341,70 +341,70 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_premiumcoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_antimony_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# premiumcoin-qt binary #
-qt_premiumcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# antimony-qt binary #
+qt_antimony_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_premiumcoin_qt_SOURCES = qt/premiumcoin.cpp
+qt_antimony_qt_SOURCES = qt/antimony.cpp
 if TARGET_DARWIN
-  qt_premiumcoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_antimony_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_premiumcoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_antimony_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_premiumcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_antimony_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_premiumcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_antimony_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_premiumcoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_antimony_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_premiumcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_antimony_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
-qt_premiumcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_premiumcoin_qt_LIBTOOLFLAGS = --tag CXX
+qt_antimony_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_antimony_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/premiumcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/antimonystrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/premiumcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/antimonystrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/premiumcoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/antimony_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name premiumcoin_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name antimony_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name premiumcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name antimony $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-premiumcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_premiumcoin_qt_OBJECTS) qt/premiumcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+antimony_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_antimony_qt_OBJECTS) qt/antimony-qt$(EXEEXT) $(LIBBITCOINQT)
 
-premiumcoin_qt : qt/premiumcoin-qt$(EXEEXT)
+antimony_qt : qt/antimony-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

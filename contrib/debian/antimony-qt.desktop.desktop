@@ -1,11 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=premiumcoin
-Comment=premiumcoin P2P Cryptocurrency
-Exec=premiumcoin-qt %u
+Name=antimony
+Comment=antimony P2P Cryptocurrency
+Exec=antimony-qt %u
 Terminal=false
 Type=Application
-Icon=premiumcoin128
-MimeType=x-scheme-handler/premiumcoin;
+Icon=antimony128
+MimeType=x-scheme-handler/antimony;
 Categories=Office;Finance;
-Name[en_US]=premiumcoin-qt.desktop
+Name[en_US]=antimony-qt.desktop

@@ -1,28 +1,28 @@
 Translations
 ============
 
-The premiumcoin Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, premiumcoin Core makes use of the Transifex online translation management tool.
+The antimony Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, antimony Core makes use of the Transifex online translation management tool.
 
 ### Helping to translate (using Transifex)
 Transifex is setup to monitor the GitHub repo for updates, and when code containing new translations is found, Transifex will process any changes. It may take several hours after a pull-request has been merged, to appear in the Transifex web interface.
 
-Multiple language support is critical in assisting PRMC's global adoption, and growth. One of PRMC's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
+Multiple language support is critical in assisting ATMN's global adoption, and growth. One of ATMN's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex PRMC project](https://www.transifex.com/premiumcoin-project/premiumcoin-project-translations/) to assist in translations.
+See the [Transifex ATMN project](https://www.transifex.com/antimony-project/antimony-project-translations/) to assist in translations.
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
-`premiumcoin_xx_YY.ts or premiumcoin_xx.ts`
+`antimony_xx_YY.ts or antimony_xx.ts`
 
-`src/qt/locale/premiumcoin_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `premiumcoin_en.ts`.
+`src/qt/locale/antimony_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `antimony_en.ts`.
 
-To automatically regenerate the `premiumcoin_en.ts` file, run the following commands:
+To automatically regenerate the `antimony_en.ts` file, run the following commands:
 ```sh
 cd src/
 make translate
 ```
 
-`contrib/premiumcoin-qt.pro` takes care of generating `.qm` (binary compiled) files from `.ts` (source files) files. It’s mostly automated, and you shouldn’t need to worry about it.
+`contrib/antimony-qt.pro` takes care of generating `.qm` (binary compiled) files from `.ts` (source files) files. It’s mostly automated, and you shouldn’t need to worry about it.
 
 **Example Qt translation**
 ```cpp
@@ -36,14 +36,14 @@ When an updated source file is merged into the GitHub repo, Transifex will autom
 
 To create the pull-request, use the following commands:
 ```
-git add src/qt/premiumcoinstrings.cpp src/qt/locale/premiumcoin_en.ts
+git add src/qt/antimonystrings.cpp src/qt/locale/antimony_en.ts
 git commit
 ```
 
 ### Creating a Transifex account
 Visit the [Transifex Signup](https://www.transifex.com/signup/) page to create an account. Take note of your username and password, as they will be required to configure the command-line tool.
 
-You can find the PRMC translation project at [https://www.transifex.com/premiumcoin-project/premiumcoin-project-translations/](https://www.transifex.com/premiumcoin-project/premiumcoin-project-translations/).
+You can find the ATMN translation project at [https://www.transifex.com/antimony-project/antimony-project-translations/](https://www.transifex.com/antimony-project/antimony-project-translations/).
 
 ### Installing the Transifex client command-line tool
 The client it used to fetch updated translations. If you are having problems, or need more details, see [http://docs.transifex.com/developer/client/setup](http://docs.transifex.com/developer/client/setup)
@@ -68,16 +68,16 @@ username = USERNAME
 
 Please see [http://docs.transifex.com/developer/client/setup#windows](http://docs.transifex.com/developer/client/setup#windows) for details on installation.
 
-The Transifex PRMC project config file is included as part of the repo. It can be found at `.tx/config`, however you shouldn’t need change anything.
+The Transifex ATMN project config file is included as part of the repo. It can be found at `.tx/config`, however you shouldn’t need change anything.
 
 ### Synchronising translations
 To assist in updating translations, we have created a script to help.
 
 1. `python contrib/devtools/update-translations.py`
-2. Update `src/qt/premiumcoin_locale.qrc` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(premiumcoin_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
+2. Update `src/qt/antimony_locale.qrc` manually or via
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(antimony_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
 3. Update `src/Makefile.qt.include` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(premiumcoin_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(antimony_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
 4. `git add` new translations from `src/qt/locale/`
 
 **Do not directly download translations** one by one from the Transifex website, as we do a few post-processing steps before committing the translations.
@@ -85,7 +85,7 @@ To assist in updating translations, we have created a script to help.
 ### Handling Plurals (in source files)
 When new plurals are added to the source file, it's important to do the following steps:
 
-1. Open `premiumcoin_en.ts` in Qt Linguist (included in the Qt SDK)
+1. Open `antimony_en.ts` in Qt Linguist (included in the Qt SDK)
 2. Search for `%n`, which will take you to the parts in the translation that use plurals
 3. Look for empty `English Translation (Singular)` and `English Translation (Plural)` fields
 4. Add the appropriate strings for the singular and plural form of the base string
@@ -94,11 +94,11 @@ When new plurals are added to the source file, it's important to do the followin
 7. Save the source file
 
 ### Translating a new language
-To create a new language template, you will need to edit the languages manifest file `src/qt/premiumcoin_locale.qrc` and add a new entry. Below is an example of the English language entry.
+To create a new language template, you will need to edit the languages manifest file `src/qt/antimony_locale.qrc` and add a new entry. Below is an example of the English language entry.
 
 ```xml
 <qresource prefix="/translations">
-    <file alias="en">locale/premiumcoin_en.qm</file>
+    <file alias="en">locale/antimony_en.qm</file>
     ...
 </qresource>
 ```
@@ -106,6 +106,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-The premiumcoin Core translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [PRMC Slack](https://premiumcoin.slack.com).
+The antimony Core translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [ATMN Slack](https://antimony.slack.com).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.

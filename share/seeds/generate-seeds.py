@@ -2,7 +2,7 @@
 # Copyright (c) 2014 Wladmir J. van der Laan
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-# premiumcoin Developers 2017-2018
+# antimony Developers 2017-2018
 '''
 Script to generate list of seed nodes for chainparams.cpp.
 

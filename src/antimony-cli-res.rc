@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "premiumcoin"
-            VALUE "FileDescription",    "premiumcoin-cli (OSS RPC client for premiumcoin)"
+            VALUE "CompanyName",        "antimony"
+            VALUE "FileDescription",    "antimony-cli (OSS RPC client for antimony)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "premiumcoin-cli"
+            VALUE "InternalName",       "antimony-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "premiumcoin-cli.exe"
-            VALUE "ProductName",        "premiumcoin-cli"
+            VALUE "OriginalFilename",   "antimony-cli.exe"
+            VALUE "ProductName",        "antimony-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

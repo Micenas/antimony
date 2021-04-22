@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between premiumcoin-cli and premiumcoind)
- * of a given instance of the premiumcoin system.
+ * CBaseChainParams defines the base parameters (shared between antimony-cli and antimonyd)
+ * of a given instance of the antimony system.
  */
 class CBaseChainParams
 {

@@ -1,19 +1,19 @@
 [Unit]
-Description=premiumcoin's distributed currency daemon
+Description=antimony's distributed currency daemon
 After=network.target
 
 [Service]
-User=premiumcoin
-Group=premiumcoin
+User=antimony
+Group=antimony
 
 Type=forking
-PIDFile=/var/lib/premiumcoind/premiumcoind.pid
+PIDFile=/var/lib/antimonyd/antimonyd.pid
 
-ExecStart=/usr/bin/premiumcoind -daemon -pid=/var/lib/premiumcoind/premiumcoind.pid \
-          -conf=/etc/premiumcoin/premiumcoin.conf -datadir=/var/lib/premiumcoind
+ExecStart=/usr/bin/antimonyd -daemon -pid=/var/lib/antimonyd/antimonyd.pid \
+          -conf=/etc/antimony/antimony.conf -datadir=/var/lib/antimonyd
 
-ExecStop=-/usr/bin/premiumcoin-cli -conf=/etc/premiumcoin/premiumcoin.conf \
-         -datadir=/var/lib/premiumcoind stop
+ExecStop=-/usr/bin/antimony-cli -conf=/etc/antimony/antimony.conf \
+         -datadir=/var/lib/antimonyd stop
 
 Restart=always
 PrivateTmp=true

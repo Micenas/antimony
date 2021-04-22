@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The premiumcoin developers
+// Copyright (c) 2017-2018 The antimony developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,7 +112,7 @@ public:
         nModifierUpdateBlock = 1;
         nMaxMoneyOut = 35000000 * COIN; 
 
-        const char* pszTimestamp = "premiumcoin cryptocurrency";
+        const char* pszTimestamp = "antimony cryptocurrency";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -206,14 +206,14 @@ public:
         vSeeds.clear();
 	//removed testnet seeds. waiting for new addresses.
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // Testnet premiumcoin addresses start with 'T'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet premiumcoin script addresses start with '5' or '6'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // Testnet antimony addresses start with 'T'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet antimony script addresses start with '5' or '6'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet premiumcoin BIP32 pubkeys start with 'DRKV'
+        // Testnet antimony BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet premiumcoin BIP32 prvkeys start with 'DRKP'
+        // Testnet antimony BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet premiumcoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet antimony BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x01)(0x00)(0x00)(0x80).convert_to_container<std::vector<unsigned char> >();
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
         fRequireRPCPassword = true;
@@ -250,8 +250,8 @@ public:
         pchMessageStart[2] = 0x7e;
         pchMessageStart[3] = 0xac;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // premiumcoin: 1 day
-        nTargetSpacing = 1 * 60;        // premiumcoin: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // antimony: 1 day
+        nTargetSpacing = 1 * 60;        // antimony: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

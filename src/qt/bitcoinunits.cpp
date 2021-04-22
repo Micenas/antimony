@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The premiumcoin developers
+// Copyright (c) 2017-2018 The antimony developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +20,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(PRMC);
+    unitlist.append(ATMN);
     unitlist.append(mENZ);
     unitlist.append(uENZ);
     return unitlist;
@@ -29,7 +29,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case PRMC:
+    case ATMN:
     case mENZ:
     case uENZ:
         return true;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case PRMC:
-        return QString("PRMC");
+    case ATMN:
+        return QString("ATMN");
     case mENZ:
-        return QString("mPRMC");
+        return QString("mATMN");
     case uENZ:
-        return QString::fromUtf8("uPRMC");
+        return QString::fromUtf8("uATMN");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PRMC:
-            return QString("PRMC");
+        case ATMN:
+            return QString("ATMN");
         case mENZ:
-            return QString("mPRMC");
+            return QString("mATMN");
         case uENZ:
-            return QString::fromUtf8("μPRMC");
+            return QString::fromUtf8("μATMN");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PRMC:
-            return QString("tPRMC");
+        case ATMN:
+            return QString("tATMN");
         case mENZ:
-            return QString("mtPRMC");
+            return QString("mtATMN");
         case uENZ:
-            return QString::fromUtf8("μtPRMC");
+            return QString::fromUtf8("μtATMN");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PRMC:
-            return QString("PRMC");
+        case ATMN:
+            return QString("ATMN");
         case mENZ:
-            return QString("Milli-PRMC (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-ATMN (1 / 1" THIN_SP_UTF8 "000)");
         case uENZ:
-            return QString("Micro-PRMC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-ATMN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PRMC:
-            return QString("TestPRMCs");
+        case ATMN:
+            return QString("TestATMNs");
         case mENZ:
-            return QString("Milli-TestPRMC (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-TestATMN (1 / 1" THIN_SP_UTF8 "000)");
         case uENZ:
-            return QString("Micro-TestPRMC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-TestATMN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,7 +109,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case PRMC:
+    case ATMN:
         return 100000000;
     case mENZ:
         return 100000;
@@ -123,7 +123,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case PRMC:
+    case ATMN:
         return 8;
     case mENZ:
         return 5;

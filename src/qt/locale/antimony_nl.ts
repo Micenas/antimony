@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw premiumcoinadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your antimony addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw antimonyadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw premiumcoinadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your antimony addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw antimonyadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>premiumcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
-        <translation>premiumcoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ENZs stelen.</translation>
+        <source>antimony will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
+        <translation>antimony zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ENZs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW PRMC VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW ATMN VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -236,15 +236,15 @@
     </message>
     <message>
         <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een premiumcoin adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <translation>Voer een antimony adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>Het premiumcoin adres om het bericht met te ondertekenen</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>Het antimony adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het premiumcoin adres bezit</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het antimony adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>Het premiumcoin adres waarmee het bericht was ondertekend</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>Het antimony adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde premiumcoin adres</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde antimony adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Kern</translation>
+        <source>antimony Core</source>
+        <translation>antimony Kern</translation>
     </message>
     <message>
-        <source>Send coins to a premiumcoin address</source>
-        <translation>Verstuur munten naar een premiumcoin adres</translation>
+        <source>Send coins to a antimony address</source>
+        <translation>Verstuur munten naar een antimony adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en premiumcoin: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR-codes en antimony: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
-        <translation>&amp;Over premiumcoin Kern</translation>
+        <source>&amp;About antimony Core</source>
+        <translation>&amp;Over antimony Kern</translation>
     </message>
     <message>
-        <source>Show information about premiumcoin Core</source>
-        <translation>Toon informatie over premiumcoin Kern</translation>
+        <source>Show information about antimony Core</source>
+        <translation>Toon informatie over antimony Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for premiumcoin</source>
-        <translation>Wijzig premiumcoin configuratie opties</translation>
+        <source>Modify configuration options for antimony</source>
+        <translation>Wijzig antimony configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw premiumcoin adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw antimony adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde premiumcoin adressen</translation>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde antimony adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a premiumcoin: URI or payment request</source>
-        <translation>Open een premiumcoin: URI of betaalverzoek</translation>
+        <source>Open a antimony: URI or payment request</source>
+        <translation>Open een antimony: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>premiumcoin Core client</source>
-        <translation>premiumcoin Core client</translation>
+        <source>antimony Core client</source>
+        <translation>antimony Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to premiumcoin network</source>
-        <translation><numerusform>%n actieve connectie(s) naar premiumcoin netwerk</numerusform><numerusform>%n actieve connectie(s) naar premiumcoin netwerk</numerusform></translation>
+        <source>%n active connection(s) to antimony network</source>
+        <translation><numerusform>%n actieve connectie(s) naar antimony netwerk</numerusform><numerusform>%n actieve connectie(s) naar antimony netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1010,8 +1010,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid premiumcoin address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig premiumcoin adres.</translation>
+        <source>The entered address "%1" is not a valid antimony address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig antimony adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1040,16 +1040,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Kern</translation>
+        <source>antimony Core</source>
+        <translation>antimony Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About premiumcoin Core</source>
-        <translation>Over premiumcoin Core</translation>
+        <source>About antimony Core</source>
+        <translation>Over antimony Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1079,16 +1079,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to premiumcoin Core.</source>
-        <translation>Welkom bij premiumcoin Core</translation>
+        <source>Welcome to antimony Core.</source>
+        <translation>Welkom bij antimony Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Kern</translation>
+        <source>antimony Core</source>
+        <translation>antimony Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1300,24 +1300,24 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start premiumcoin after logging in to the system.</source>
-        <translation>premiumcoin automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start antimony after logging in to the system.</source>
+        <translation>antimony automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start premiumcoin on system login</source>
-        <translation>&amp;premiumcoin starten bij systeemlogin</translation>
+        <source>&amp;Start antimony on system login</source>
+        <translation>&amp;antimony starten bij systeemlogin</translation>
     </message>
     <message>
-        <source>Amount of premiumcoin to keep anonymized</source>
-        <translation>Hoeveelheid premiumcoin anoniem te houden</translation>
+        <source>Amount of antimony to keep anonymized</source>
+        <translation>Hoeveelheid antimony anoniem te houden</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting premiumcoin.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van premiumcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting antimony.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van antimony.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1427,8 +1427,8 @@ MultiSend: %1</translation>
         <translation>Status:</translation>
     </message>
     <message>
-        <source>0 PRMC / 0 Rounds</source>
-        <translation>0 PRMC / 0 Rondes</translation>
+        <source>0 ATMN / 0 Rounds</source>
+        <translation>0 ATMN / 0 Rondes</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -1512,8 +1512,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a premiumcoin address (e.g. %1)</source>
-        <translation>Voer een premiumcoin adres in (b.v. %1)</translation>
+        <source>Enter a antimony address (e.g. %1)</source>
+        <translation>Voer een antimony adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1702,8 +1702,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the premiumcoin RPC console.</source>
-        <translation>Welkom bij de premiumcoin RPC console.</translation>
+        <source>Welcome to the antimony RPC console.</source>
+        <translation>Welkom bij de antimony RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1894,8 +1894,8 @@ MultiSend: %1</translation>
         <translation>Wijzig:</translation>
     </message>
     <message>
-        <source>0 PRMC</source>
-        <translation>0 PRMC</translation>
+        <source>0 ATMN</source>
+        <translation>0 ATMN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2024,8 +2024,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>premiumcoin Core is shutting down...</source>
-        <translation>premiumcoin Core is aan het afsluiten...</translation>
+        <source>antimony Core is shutting down...</source>
+        <translation>antimony Core is aan het afsluiten...</translation>
     </message>
     </context>
 <context>
@@ -2035,8 +2035,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>Het premiumcoin adres om het bericht met te ondertekenen</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>Het antimony adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2067,16 +2067,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het premiumcoin adres bezit</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het antimony adres bezit</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>Het premiumcoin adres waarmee het bericht was ondertekend</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>Het antimony adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde premiumcoin adres</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde antimony adres</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2134,8 +2134,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Kern</translation>
+        <source>antimony Core</source>
+        <translation>antimony Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2150,8 +2150,8 @@ MultiSend: %1</translation>
         <translation>De Dash Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The premiumcoin Core developers</source>
-        <translation>De premiumcoin Core ontwikkelaars</translation>
+        <source>The antimony Core developers</source>
+        <translation>De antimony Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2504,12 +2504,12 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The premiumcoin Core Developers</source>
-        <translation>Copyright (C) 2015-%i The premiumcoin Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The antimony Core Developers</source>
+        <translation>Copyright (C) 2015-%i The antimony Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The premiumcoin Core Developers</source>
-        <translation>Copyright (C) 2017-%i The premiumcoin Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2017-%i The antimony Core Developers</source>
+        <translation>Copyright (C) 2017-%i The antimony Core Ontwikkelaars</translation>
     </message>
     <message>
         <source>Error</source>

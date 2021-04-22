@@ -1,38 +1,38 @@
-premiumcoin Core
+antimony Core
 =====================
 
 Setup
 ---------------------
-[premiumcoin Core](https://premiumcoin.io/) is the original premiumcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of premiumcoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[antimony Core](https://antimony.io/) is the original antimony client and it builds the backbone of the network. However, it downloads and stores the entire history of antimony transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run premiumcoin on your native platform.
+The following are some helpful notes on how to run antimony on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/premiumcoin-qt (GUI, 32-bit) or bin/32/premiumcoind (headless, 32-bit)
-- bin/64/premiumcoin-qt (GUI, 64-bit) or bin/64/premiumcoind (headless, 64-bit)
+- bin/32/antimony-qt (GUI, 32-bit) or bin/32/antimonyd (headless, 32-bit)
+- bin/64/antimony-qt (GUI, 64-bit) or bin/64/antimonyd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run premiumcoin-qt.exe.
+Unpack the files into a directory, and then run antimony-qt.exe.
 
 ### OSX
 
-Drag premiumcoin-Qt to your applications folder, and then run premiumcoin-Qt.
+Drag antimony-Qt to your applications folder, and then run antimony-Qt.
 
 ### Need Help?
 
-* See the documentation at the [premiumcoin Wiki](https://github.com/premiumcoin-crypto/premiumcoin/wiki)
+* See the documentation at the [antimony Wiki](https://github.com/antimony-crypto/antimony/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](FIXME Add official BCT URL on ANN) or on the [premiumcoin Discord](https://discord.gg/a7vhegP).
+* Ask for help on [BitcoinTalk](FIXME Add official BCT URL on ANN) or on the [antimony Discord](https://discord.gg/a7vhegP).
 
 Building
 ---------------------
-The following are developer notes on how to build premiumcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build antimony on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -40,7 +40,7 @@ The following are developer notes on how to build premiumcoin on your native pla
 
 Development
 ---------------------
-The premiumcoin repo's [root README](https://github.com/premiumcoin-crypto/premiumcoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The antimony repo's [root README](https://github.com/antimony-crypto/antimony/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -54,7 +54,7 @@ The premiumcoin repo's [root README](https://github.com/premiumcoin-crypto/premi
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](FIXME with URL after ANN) or the [premiumcoin Subreddit](http://reddit.com/r/premiumcoincoin).
+* Discuss on the [BitcoinTalk](FIXME with URL after ANN) or the [antimony Subreddit](http://reddit.com/r/antimonycoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

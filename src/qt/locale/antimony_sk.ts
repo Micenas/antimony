@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše premiumcoin adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your antimony addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše antimony adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your premiumcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše premiumcoin adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your antimony addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše antimony adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>premiumcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
-        <translation>premiumcoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše PRMC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>antimony will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ENZs from being stolen by malware infecting your computer.</source>
+        <translation>antimony sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše ATMN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PRMC&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY PRMC &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ATMN&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY ATMN &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -247,8 +247,8 @@
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>Adresa premiumcoin, ktorou chcete správu podpísať</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>Adresa antimony, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto premiumcoin adresy</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto antimony adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>premiumcoin adresa, ktorou bola správa podpísaná</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>antimony adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou premiumcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou antimony adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
-        <source>Send coins to a premiumcoin address</source>
-        <translation>Odoslať mince na adresu premiumcoin</translation>
+        <source>Send coins to a antimony address</source>
+        <translation>Odoslať mince na adresu antimony</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About premiumcoin Core</source>
-        <translation>O premiumcoin Core</translation>
+        <source>&amp;About antimony Core</source>
+        <translation>O antimony Core</translation>
     </message>
     <message>
-        <source>Show information about premiumcoin Core</source>
-        <translation>Zobraziť informácie o premiumcoin Core</translation>
+        <source>Show information about antimony Core</source>
+        <translation>Zobraziť informácie o antimony Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for premiumcoin</source>
-        <translation>Zmeňte možnosti konfigurácie pre premiumcoin</translation>
+        <source>Modify configuration options for antimony</source>
+        <translation>Zmeňte možnosti konfigurácie pre antimony</translation>
     </message>
     <message>
-        <source>Sign messages with your premiumcoin addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy premiumcoin, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your antimony addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy antimony, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified premiumcoin addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými premiumcoin adresami</translation>
+        <source>Verify messages to ensure they were signed with specified antimony addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými antimony adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a premiumcoin: URI or payment request</source>
-        <translation>Otvorte premiumcoin: URI alebo žiadosť o platbu</translation>
+        <source>Open a antimony: URI or payment request</source>
+        <translation>Otvorte antimony: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the premiumcoin Core help message to get a list with possible premiumcoin command-line options</source>
-        <translation>Zobraziť pomocnú správu programu premiumcoin Core a získajte zoznam možností príkazového riadka premiumcoin</translation>
+        <source>Show the antimony Core help message to get a list with possible antimony command-line options</source>
+        <translation>Zobraziť pomocnú správu programu antimony Core a získajte zoznam možností príkazového riadka antimony</translation>
     </message>
     <message>
-        <source>premiumcoin Core client</source>
-        <translation>premiumcoin Core klient</translation>
+        <source>antimony Core client</source>
+        <translation>antimony Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1093,8 +1093,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The premiumcoin address to sign the message with</source>
-        <translation>Adresa premiumcoin, ktorou chcete správu podpísať</translation>
+        <source>The antimony address to sign the message with</source>
+        <translation>Adresa antimony, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1117,16 +1117,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this premiumcoin address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto premiumcoin adresy</translation>
+        <source>Sign the message to prove you own this antimony address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto antimony adresy</translation>
     </message>
     <message>
-        <source>The premiumcoin address the message was signed with</source>
-        <translation>premiumcoin adresa, ktorou bola správa podpísaná</translation>
+        <source>The antimony address the message was signed with</source>
+        <translation>antimony adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified premiumcoin address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou premiumcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified antimony address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou antimony adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1164,8 +1164,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>premiumcoin Core</source>
-        <translation>premiumcoin Core</translation>
+        <source>antimony Core</source>
+        <translation>antimony Core</translation>
     </message>
     </context>
 <context>
