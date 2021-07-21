@@ -1649,7 +1649,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 		else
 			nMasternodeCount = mnodeman.size();
 	}
-	int64_t mNodeCoins = nMasternodeCount * 5000 * COIN;
+	int64_t mNodeCoins = nMasternodeCount * 100000 * COIN;
 
 	LogPrintf("Adjusting seesaw at height %d with %d masternodes (without drift: %d) at %ld\n", nHeight, nMasternodeCount, nMasternodeCount - Params().MasternodeCountDrift(), GetTime());
 
